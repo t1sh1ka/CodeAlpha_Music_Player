@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player">
+        <div class="cover-container">
+            <img id="cover" src="covers/greedy.jpg" alt="Song Cover">
+        </div>
+        <div class="info">
+            <span id="title">Greedy</span>
+            <span id="artist">Tate McRae</span>
+        </div>
+        <div class="controls">
+            <button id="prev"><i class="fas fa-backward"></i></button>
+            <button id="play-pause"><i class="fas fa-play"></i></button>
+            <button id="next"><i class="fas fa-forward"></i></button>
+        </div>
+        <div class="progress-container">
+            <div id="progress" class="progress"></div>
+        </div>
+        <div id="playlist" class="playlist">
+            <ul>
+                <li data-index="0">Greedy - Tate McRae</li>
+                <li data-index="1">Havana - Camila Cabello</li>
+                <li data-index="2">Out of My League - Fitz and The Tantrums</li>
+                <li data-index="3">South of the Border - Ed Sheeran</li>
+                <li data-index="4">Espresso - Sabrina Carpenter</li>
+                <li data-index="5">I Wanna Be Yours - Arctic Monkeys</li>
+            </ul>
+        </div>
+        <audio id="audio"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

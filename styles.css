@@ -1,0 +1,110 @@
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+ font-family: Arial, sans-serif;
+ background-size: contain;
+ background-position: center;
+ color: #fff;
+ overflow: hidden;
+ position: relative;
+}
+
+body::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-size: cover;
+ background-position: center;
+ background: inherit;
+ filter: blur(15px);
+ z-index: -1;
+}
+
+.player {
+ background: rgba(0, 0, 0, 0.7);
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ padding: 40px;
+ width: 700px;
+ text-align: center;
+ position: relative;
+ z-index: 1;
+}
+
+.cover-container {
+ width: 100%;
+ height: 200%;
+ margin-bottom: 30px;
+}
+
+.cover-container img {
+ width: 90%;
+ height: 100%;
+ flex-direction: center;
+ object-fit: cover;
+ border-radius: 10px;
+}
+
+.info {
+ margin-bottom: 20px;
+}
+
+.info span {
+ display: block;
+ font-size: 1.7em;
+ margin: 5px 0;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: rgb(235, 237, 243);
+}
+
+.controls {
+ margin-bottom: 20px;
+}
+
+.controls button {
+ background: rgba(0, 0, 0, 0.5);
+ border: none;
+ color: #fff;
+ padding: 10px 15px;
+ border-radius: 30px;
+ cursor: pointer;
+ margin: 50px;
+ font-size: 1.8em;
+ transition: background 0.3s;
+ outline: none;
+}
+
+.controls button:hover {
+ background: rgba(0, 0, 0, 0.7);
+}
+
+.controls button:focus {
+ outline: none;
+ box-shadow: none;
+}
+
+.progress-container {
+ background: #ddd;
+ border-radius: 5px;
+ height: 10px;
+ position: relative;
+ cursor: pointer;
+ margin-bottom: 20px;
+}
+
+.progress {
+ background: #2a232b;
+ height: 100%;
+ width: 0;
+ border-radius: 5px;
+}
+
+.playlist {
+ display: none;
+}
